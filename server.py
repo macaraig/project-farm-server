@@ -4,7 +4,7 @@ from flask import jsonify
 project_farm_server = Flask(__name__)
 
 @project_farm_server.route("/rainfall")
-def home():
+def get_rainfall():
     rainfall = {
         "Jan" : 3,
         "Feb" : 5,
@@ -17,7 +17,7 @@ def home():
     return jsonify(rainfall)
 
 @project_farm_server.route("/recommendations")
-def home():
+def get_reco():
     recommendations = ["rice", "squash", "green chili" ]
     return jsonify(recommendations)
 
