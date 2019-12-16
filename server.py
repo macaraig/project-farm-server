@@ -2,9 +2,19 @@ from flask import Flask
 
 project_farm_server = Flask(__name__)
 
-@project_farm_server.route("/")
+rainfall = {
+    "Jan" : 3,
+    "Feb" : 5,
+    "Mar" : 5,
+    "Apr" : 6,
+    "May" : 7,
+    "Jun" : 2,
+    "Jul" : 1
+}
+
+@project_farm_server.route("/rainfall")
 def home():
-    return "Hello, World!"
+    return jsonify(rainfall)
 
 
 if __name__ == "__main__":
