@@ -20,25 +20,22 @@ def get_rainfall():
 def get_reco():
     recommendations = [
         {
-            'id': '1', 
             'cropNameEng': 'Cabbage',
             'cropNameFil': 'Repolyo',
             'link': 'https://hkpinoytv.com/how-to-plant-and-harvest-cabbage/',
-            'image': "require('../images/cabbage.jpg')"
+            'image': '../images/cabbage.jpg'
         },
         {
-            'id': '2', 
             'cropNameEng': 'Garlic',
             'cropNameFil': 'Bawang',
             'link': 'https://hkpinoytv.com/pagtatanim-at-pagluluto-ng-bawang/',
-            'image': "require('../images/garlic.jpg')"
+            'image': '../images/garlic.jpg'
         },
         {
-            'id': '3', 
             'cropNameEng': 'Eggplant',
             'cropNameFil': 'Talong',
             'link': 'https://hkpinoytv.com/how-to-plant-eggplant/',
-            'image': "require('../images/eggplant.jpg')"
+            'image': '../images/eggplant.jpg'
         }
     ]
     return jsonify(recommendations)
